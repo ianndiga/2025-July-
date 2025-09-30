@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demonstration of advanced HTML5 elements, lists, tables, media, and a structured accessible form with built-in validation.">
+  <title>Enhanced HTML5 Form Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Page Header -->
+  <header>
+    <h1>Enhanced HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <!-- Content Section -->
+  <main>
+    <!-- Lists -->
+    <section>
+      <h2>Popular Web Technologies</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+      </ul>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h2>Sample Course Schedule</h2>
+      <table aria-label="Course Schedule">
+        <thead>
+          <tr>
+            <th>Course</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Web Development</td>
+            <td>Monday</td>
+            <td>10:00 AM - 12:00 PM</td>
+          </tr>
+          <tr>
+            <td>Database Systems</td>
+            <td>Wednesday</td>
+            <td>2:00 PM - 4:00 PM</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media -->
+    <section>
+      <h2>Media Showcase</h2>
+      <figure>
+        <img src="https://via.placeholder.com/300x150" alt="Sample Placeholder Image">
+        <figcaption>A sample placeholder image.</figcaption>
+      </figure>
+
+      <figure>
+        <audio controls>
+          <source src="sample-audio.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+        <figcaption>Sample audio playback.</figcaption>
+      </figure>
+
+      <figure>
+        <video controls width="320">
+          <source src="sample-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Sample video playback.</figcaption>
+      </figure>
+    </section>
+
+    <!-- HTML5 Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="4">
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6">
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label for="course">Select Course:</label>
+          <select id="course" name="course" required>
+            <option value="">--Choose an option--</option>
+            <option value="web">Web Development</option>
+            <option value="database">Database Systems</option>
+            <option value="ai">Artificial Intelligence</option>
+          </select>
+
+          <p>Preferred Learning Method:</p>
+          <label><input type="radio" name="method" value="online" required> Online</label>
+          <label><input type="radio" name="method" value="offline"> Offline</label>
+
+          <label><input type="checkbox" name="newsletter"> Subscribe to newsletter</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Ian Ndiga. All rights reserved.</p>
+  </footer>
+</body>
+</html>
